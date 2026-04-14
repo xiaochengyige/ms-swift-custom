@@ -8,4 +8,5 @@ Developer Guide
    multi_task.md
    reward_function.md
    reward_model.md
+   training_flow.md
    gym_env.md
