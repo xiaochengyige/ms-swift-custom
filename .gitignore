@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual env / tool caches
+.venv/
+venv/
+.uv-cache/
+.uv-python/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Training outputs / logs
+output/
+output_*/
+output_stage1/
+output_stage2/
+checkpoints/
+logs/
+runs/
+wandb/
+swanlog/
+
+# Local upstream repos and datasets
+alpamayo/
+
+# Local temp files
+*.log
+*.tmp
+*.bak
