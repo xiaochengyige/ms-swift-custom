@@ -17,6 +17,9 @@
 ## 快速开始
 
 ```bash
+# 数据处理（把原始数据集整理成训练所需 JSONL，详见 onevl/scripts/data/README.md）
+python onevl/scripts/data/convert_navsim_to_latent_cot.py <src.json> data/navsim_latent_cot_full.jsonl
+
 # 训练（分三阶段，详见 onevl/docs/03）
 bash onevl/scripts/train/sft_stage0.sh   # 答案预热
 bash onevl/scripts/train/sft_stage1.sh   # 训练辅助解码器（冻结主模型）
@@ -54,7 +57,7 @@ bash onevl/scripts/selfcheck.sh
 └── onevl/
     ├── register.py            # --external_plugins 入口（唯一注册点）
     ├── onevl_plugin/          # 插件包：latent_cot / loss / model / template / infer
-    ├── scripts/               # 训练/推理/自检脚本（含 selfcheck.sh）
+    ├── scripts/               # 脚本：train/ 训练、infer/ 推理、data/ 数据处理、selfcheck.sh
     ├── selfcheck.py           # 导入/注册自检
     └── docs/                  # 中文文档
 ```

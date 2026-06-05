@@ -19,6 +19,7 @@
 - 插件包与入口：`onevl/onevl_plugin/`、`onevl/register.py`
 - 训练脚本：`onevl/scripts/train/sft_stage{0,1,2}.sh`
 - 推理脚本：`onevl/scripts/infer/infer_navsim{,_explain}.sh`
+- 数据处理脚本：`onevl/scripts/data/`（数据集构造/转换、评测格式、可视化对比；见 `onevl/scripts/data/README.md`）
 - 自检脚本：`onevl/selfcheck.py`（运行 `bash onevl/scripts/selfcheck.sh`，由该脚本经 PYTHONPATH 提供导入路径）
 
 ## 一图速览

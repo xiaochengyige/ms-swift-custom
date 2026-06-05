@@ -78,6 +78,8 @@ ckpt/
 *.npz
 data/
 datasets/
+# OneVL: onevl/scripts/data/ 下是数据处理脚本（代码），需纳入版本控制（覆盖上面的 data/ 规则）
+!onevl/scripts/data/
 cache/
 .cache_dir/
 

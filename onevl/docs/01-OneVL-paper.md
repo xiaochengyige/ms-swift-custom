@@ -111,11 +111,13 @@ flowchart LR
 
 训练总损失是三项加权和：
 
-\[ L = L_{\text{answer-CE}} + \lambda_{l} \cdot L_{\text{lang-explain}} + \lambda_{v} \cdot L_{\text{visual-explain}} \]
+$$
+L = L_{\text{answer-CE}} + \lambda_{l} \cdot L_{\text{lang-explain}} + \lambda_{v} \cdot L_{\text{visual-explain}}
+$$
 
-- \(L_{\text{answer-CE}}\)：主模型对答案 token 的交叉熵。
-- \(L_{\text{lang-explain}}\)：语言辅助解码器重建 CoT 文本的交叉熵（权重默认 `1.0`）。
-- \(L_{\text{visual-explain}}\)：视觉辅助解码器预测未来帧 token 的交叉熵（权重默认 `0.1`）。
+- $L_{\text{answer-CE}}$：主模型对答案 token 的交叉熵。
+- $L_{\text{lang-explain}}$：语言辅助解码器重建 CoT 文本的交叉熵（权重默认 `1.0`）。
+- $L_{\text{visual-explain}}$：视觉辅助解码器预测未来帧 token 的交叉熵（权重默认 `0.1`）。
 
 > 代码层面对应 `compute_explain_loss` / `compute_visual_explain_loss`，详见 [02-原始实现讲解](02-original-implementation.md)。
 
