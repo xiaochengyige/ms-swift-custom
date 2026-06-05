@@ -1,0 +1,130 @@
+# ============================================================
+#  Repo-level .gitignore  (covers ms-swift-4.2.0/ and onevl/)
+#  Note: ms-swift-4.2.0 also ships its own .gitignore, which still applies
+#  to its own subtree; the rules below are additive.
+# ============================================================
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# ===== Testing / linting / typing caches =====
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ===== Notebooks =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+
+# ===== ML / training / inference artifacts =====
+outputs/
+output/
+runs/
+logs/
+log/
+*.log
+wandb/
+mlruns/
+lightning_logs/
+checkpoints/
+ckpt/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+*.npz
+data/
+datasets/
+cache/
+.cache_dir/
+
+# ===== Editors / IDEs =====
+.vscode/
+.vscode-test/
+*.code-workspace
+.history/
+.idea/
+*.iml
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+
+# ===== AI assistants (Cursor / Claude / Copilot / aider) =====
+.cursor/
+.cursorignore
+.cursorindexingignore
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.claude.json
+AGENTS.md
+.aider*
+.continue/
+.codeium/
+.windsurf/
+
+# ===== OS junk =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Misc =====
+*.tmp
+*.bak
+*.orig
+.env
+.env.*
+!.env.example
